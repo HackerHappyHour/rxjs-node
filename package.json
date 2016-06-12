@@ -4,8 +4,6 @@
   "description": "RxJS v5 node operators and observables",
   "main": "index.js",
   "scripts": {
-    "server": "node test/server.js",
-    "pretest": "npm run server &",
     "test": "tape test/**/*.js | faucet"
   },
   "repository": {
