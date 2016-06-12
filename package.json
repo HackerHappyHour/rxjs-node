@@ -1,0 +1,37 @@
+{
+  "name": "rxjs-node",
+  "version": "0.1.0",
+  "description": "RxJS v5 node operators and observables",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/**/*.js | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackerHappyHour/rxjs-node.git"
+  },
+  "peerDependencies": {
+    "rxjs": ">=5.0.0-beta.8"
+  },
+  "keywords": [
+    "Rx",
+    "RxJS",
+    "EventEmitter",
+    "Streams",
+    "Reactive"
+  ],
+  "author": "Brian Vanderbush",
+  "bugs": {
+    "url": "https://github.com/HackerHappyHour/rxjs-node/issues"
+  },
+  "homepage": "https://github.com/HackerHappyHour/rxjs-node",
+  "directories": {
+    "doc": "doc"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "rxjs": "^5.0.0-beta.8",
+    "tape": "^4.5.1"
+  }
+}

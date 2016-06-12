@@ -1,0 +1,10 @@
+node_modules/
+modules/
+.npm-debug.log
+doc/
+examples/
+test/
+.git*
+.npmignore
+.travis.yml
+CHANGELOG.*
