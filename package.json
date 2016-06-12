@@ -4,6 +4,8 @@
   "description": "RxJS v5 node operators and observables",
   "main": "index.js",
   "scripts": {
+    "server": "node test/server.js",
+    "pretest": "npm run server &",
     "test": "tape test/**/*.js | faucet"
   },
   "repository": {
@@ -30,8 +32,12 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "express": "^4.13.4",
     "faucet": "0.0.1",
     "rxjs": "^5.0.0-beta.8",
     "tape": "^4.5.1"
+  },
+  "dependencies": {
+    "request": "^2.72.0"
   }
 }
