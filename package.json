@@ -4,6 +4,7 @@
   "description": "RxJS v5 node operators and observables",
   "main": "index.js",
   "scripts": {
+    "postinstall": "node test/create-downloadtest-raw.js",
     "test": "tape test/**/*.js | faucet"
   },
   "repository": {
@@ -33,6 +34,7 @@
     "express": "^4.13.4",
     "faucet": "0.0.1",
     "rxjs": "^5.0.0-beta.8",
+    "stream-buffers": "^3.0.0",
     "tape": "^4.5.1"
   },
   "dependencies": {
