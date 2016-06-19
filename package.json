@@ -1,6 +1,6 @@
 {
   "name": "rxjs-node",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "RxJS v5 node operators and observables",
   "main": "index.js",
   "scripts": {
