@@ -5,12 +5,11 @@ var path = require('path');
 
 var listener = server.listen();
 var testFile = `http://127.0.0.1:${listener.address().port}/raw/downloadtest.raw`;
-var downloadStream = download(testFile, path.join(__dirname, '../tmp','downloadtest.raw'))
-  .do(x => console.log(x));
+var downloadStream = download(testFile, path.join(__dirname, '../tmp','downloadtest.raw'));
 
 downloadStream.subscribe(
   function(x){
-  	console.log(x/1024);
+  	console.log(`${x/1024/1024}mb`);
   },
   function(err){
     console.error('error encountered', err);
