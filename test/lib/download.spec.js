@@ -1,5 +1,5 @@
 var server = require('../server');
-var download = require('../../lib/download');
+var {download} = require('../..');
 require('rxjs/add/operator/do');
 var path = require('path');
 
@@ -9,7 +9,8 @@ var downloadStream = download(testFile, path.join(__dirname, '../tmp','downloadt
   .do(x => console.log(x));
 
 downloadStream.subscribe(
-  function(){
+  function(x){
+  	console.log(x/1024);
   },
   function(err){
     console.error('error encountered', err);
